@@ -1,0 +1,12 @@
+name,amenity,latitude,longitude,weight,radius_m
+BMI Kings Park Hospital,hospital,56.1073744,-3.9546803,4.0,120.0
+Stirling Health and Care Village,hospital,56.1066222,-3.9348007,4.0,120.0
+Stirling Fire Station,fire_station,56.1256729,-3.954216,3.5,95.0
+Orchard House Health Centre,doctors,56.1269505,-3.9401684,3.4,80.0
+St Ninian's Health Centre,doctors,56.1008396,-3.9336874,3.4,80.0
+Bannockburn Police Office,police,56.0892837,-3.9091392,3.3,90.0
+Central Scotland Police HQ,police,56.1094639,-3.9407579,3.3,90.0
+1st Stirlingshire Scouts,community_centre,56.1230396,-3.9413461,3.0,100.0
+Bannockburn Community Centre,community_centre,56.0903884,-3.9154188,3.0,100.0
+Cambuskenneth Village Hall,community_centre,56.1243928,-3.9207062,3.0,100.0
+Mayfield Community Centre,community_centre,56.1014863,-3.9337745,3.0,100.0

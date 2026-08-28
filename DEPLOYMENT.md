@@ -1,84 +1,75 @@
-# Publishing AeroRelief-Sim
+# Deploying AeroRelief-Sim
 
-This project can be published as a public Streamlit dashboard and linked from a poster QR code.
+AeroRelief-Sim is a Streamlit application. It can run locally for development
+or be deployed to Streamlit Community Cloud for sharing through a public link.
 
-## Recommended Option: Streamlit Community Cloud
+## Streamlit Entry Point
 
-Use this option for the dissertation poster because it gives a clean public URL such as:
-
-```text
-https://aerorelief-sim.streamlit.app
-```
-
-## Files Needed In The GitHub Repository
-
-Upload these files/folders:
-
-```text
-app.py
-simulation.py
-optimization.py
-metrics.py
-visualization.py
-experiment.py
-requirements.txt
-README.md
-data/
-```
-
-Do not upload:
-
-```text
-.venv/
-__pycache__/
-poster files
-Word documents
-PowerPoint files
-old generated result images
-log files
-```
-
-## Deployment Steps
-
-1. Create a new GitHub repository, for example `aerorelief-sim`.
-2. Upload the required project files listed above.
-3. Make the GitHub repository public.
-4. Go to `https://share.streamlit.io`.
-5. Click **Create app** or **Deploy an app**.
-6. Select the GitHub repository.
-7. Set the main file path to:
+Set the main application file to:
 
 ```text
 app.py
 ```
 
-8. Choose a public app URL such as:
+## Example Public URL
+
+The intended public URL format is:
 
 ```text
 aerorelief-sim
 ```
 
-9. Deploy the app.
-10. Open the public URL and test the dashboard.
+which becomes:
 
-## QR Code For Poster
+```text
+https://aerorelief-sim.streamlit.app
+```
 
-After deployment, copy the public Streamlit URL and generate a QR code from it.
+## Local Run
 
-Recommended QR label for the poster:
+Install the Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the dashboard:
+
+```bash
+streamlit run app.py
+```
+
+On Windows, the included launch script can also be used:
+
+```text
+run_dashboard.bat
+```
+
+## Cloud Deployment Steps
+
+1. Open Streamlit Community Cloud.
+2. Connect the GitHub repository.
+3. Select the `main` branch.
+4. Set the main file path to `app.py`.
+5. Deploy the application.
+6. Open the public URL and run a small test scenario.
+
+## Poster QR Code
+
+After deployment, the public Streamlit URL can be converted into a QR code.
+A short label such as the following works well:
 
 ```text
 Try AeroRelief-Sim
 Scan to open the interactive UAV placement simulator.
 ```
 
-## If The App Is Slow Online
+## Runtime Notes
 
-For public demo use, reduce the default simulation settings:
+For public demonstrations, moderate simulation settings keep the dashboard
+responsive:
 
 - users: 60 to 80;
 - UAVs: 4 to 6;
 - PSO iterations: 60 to 100;
 - swarm size: 25 to 40.
-
-This keeps the app responsive for people scanning the poster QR code.

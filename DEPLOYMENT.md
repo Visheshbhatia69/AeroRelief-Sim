@@ -1,7 +1,8 @@
 # Deploying AeroRelief-Sim
 
-AeroRelief-Sim is a Streamlit application. It can run locally for development
-or be deployed to Streamlit Community Cloud for sharing through a public link.
+**AeroRelief-Sim: A Priority-Aware UAV Placement Simulator for Disaster Communication**
+is a Streamlit application. It can run locally for development or be deployed
+to Streamlit Community Cloud for sharing through a public link.
 
 ## Streamlit Entry Point
 

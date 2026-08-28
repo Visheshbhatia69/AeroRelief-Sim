@@ -40,7 +40,7 @@ OBJECTIVE_TERM_COLORS = {
 def main() -> None:
     """Build the dashboard page and run the selected simulation."""
     st.set_page_config(
-        page_title="AeroRelief-Sim: Priority-Aware UAV Placement",
+        page_title="AeroRelief-Sim: UAV Placement Simulator",
         layout="wide",
     )
     apply_drone_theme()
@@ -667,7 +667,7 @@ def show_project_focus() -> None:
             """
             **CU** connected-user ratio, **PZ** priority-zone coverage,
             **AC** area coverage, **RL** UAV relay-link quality,
-            **MC** movement cost. This priority-aware weighting matches the paper topic,
+            **MC** movement cost. This priority-aware weighting matches the project focus,
             and the absolute weights add up to 1.
             """
         )

@@ -1,8 +1,8 @@
-# Demo Notes: UAV Disaster Communication Simulator
+# Demo Notes: AeroRelief-Sim
 
 ## One-Sentence Explanation
 
-This simulator evaluates how UAV relay nodes can be placed after a disaster to improve temporary communication coverage, comparing random/static, K-Means, and PSO-based placement.
+AeroRelief-Sim evaluates how UAV relay nodes can be placed after a disaster to improve temporary communication coverage, comparing random/static, K-Means, and PSO-based placement.
 
 ## What The Demo Shows
 
@@ -28,7 +28,7 @@ This simulator evaluates how UAV relay nodes can be placed after a disaster to i
 Score = 0.40(CU) + 0.35(PZ) + 0.10(AC) + 0.10(RL) - 0.05(MC)
 ```
 
-The absolute weights add up to 1. Movement cost is a penalty. Priority-zone coverage is weighted strongly because the dissertation topic is priority-aware UAV placement.
+The absolute weights add up to 1. Movement cost is a penalty. Priority-zone coverage is weighted strongly because the project focus is priority-aware UAV placement.
 
 ## Weight Sensitivity Explanation
 

@@ -1,6 +1,7 @@
-# Simulator Architecture
+# AeroRelief-Sim Architecture
 
-This document describes the current UAV disaster communication simulator design.
+This document describes the current architecture of **AeroRelief-Sim**, a
+priority-aware UAV placement simulator for disaster communication.
 
 ## Scope
 

@@ -79,7 +79,8 @@ def main() -> None:
 def print_summary(result: ExperimentResult) -> None:
     """Print the setup and metrics in a presentation-friendly format."""
     config = result.config
-    print("\nUAV Disaster Communication Simulation")
+    print("\nAeroRelief-Sim: Priority-Aware UAV Placement Simulator")
+    print("Temporary Disaster Communication Support")
     print("=" * 45)
     print(f"Users: {config.num_users}")
     print(f"Drones: {config.num_drones}")
@@ -102,7 +103,7 @@ def print_metrics(title: str, values: dict[str, float]) -> None:
     print(f"Priority coverage:      {values['priority_coverage_percent']:.2f}%")
     print(f"Connected components:   {values['connected_components']:.0f}")
     print(f"Average path length:    {values['average_path_length']:.2f}")
-    print(f"Movement energy cost:   {values['movement_cost']:.2f} m")
+    print(f"Movement cost:          {values['movement_cost']:.2f} m")
     if values["movement_cost"] > 0:
         print(f"User gain efficiency:   {values['connected_gain_per_100m']:.2f} pp/100m")
         print(f"Priority efficiency:    {values['priority_gain_per_100m']:.2f} pp/100m")

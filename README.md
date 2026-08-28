@@ -1,14 +1,13 @@
-# AI-Based UAV Placement for Disaster Communication Networks
+# AeroRelief-Sim: A Priority-Aware UAV Placement Simulator for Disaster Communication
 
-This project implements a UAV disaster communication simulator for the dissertation topic:
-
-**AI-based optimization of UAV/drone placement for temporary communication networks in natural disaster situations.**
+This project implements **AeroRelief-Sim**, a UAV placement simulator for
+temporary disaster communication support.
 
 The simulator models a disaster area where normal communication infrastructure is unavailable. Ground users represent rescue workers, mobile users, or affected civilians. UAVs act as temporary aerial relay nodes. The system compares random/static UAV placement, K-Means user-cluster placement, and Particle Swarm Optimization (PSO).
 
 ## Project Aim
 
-The aim is to evaluate whether AI-based UAV placement can improve emergency communication support by increasing:
+The aim is to evaluate whether priority-aware AI-based UAV placement can improve emergency communication support by increasing:
 
 - connected users;
 - priority-zone coverage;
@@ -83,7 +82,7 @@ Where:
 - `RL`: UAV relay-link ratio.
 - `MC`: normalized UAV movement cost.
 
-The absolute weights add up to 1. Movement cost is subtracted because excessive repositioning is undesirable. Priority-zone coverage is weighted strongly because the dissertation topic is priority-aware UAV placement.
+The absolute weights add up to 1. Movement cost is subtracted because excessive repositioning is undesirable. Priority-zone coverage is weighted strongly because the project focus is priority-aware UAV placement.
 
 The dashboard includes objective-weight sensitivity analysis using multiple profiles:
 

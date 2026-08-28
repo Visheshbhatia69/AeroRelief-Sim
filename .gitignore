@@ -7,3 +7,33 @@ streamlit_app.log
 streamlit_app.out.log
 .venv/
 venv/
+
+# Local documents and presentation artefacts are submitted separately.
+*.docx
+*.pdf
+*.pptx
+
+# Generated figures, dashboard captures, and render QA outputs.
+results_*.png
+dashboard_screenshots/
+dissertation_evidence_revised/
+dissertation_experiment_outputs/
+final_poster_preview/
+poster_draft_options/
+poster_outputs/
+poster_pdf_review/
+qa_*/
+*_render_check/
+docx_review_render/
+weekly_report_render_check/
+
+# Local deployment/export packages.
+*.zip
+deploy_ready_aerorelief_sim/
+streamlit_app*.log
+
+# Local dissertation/poster helper drafts.
+aerorelief_workflow_diagram.png
+build_revised_dissertation.py
+dissertation_draft_material.md
+poster_draft.md

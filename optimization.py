@@ -7,9 +7,9 @@ from simulation import DisasterNetworkSimulation, PriorityZone
 
 
 OBJECTIVE_WEIGHTS = {
-    # Main report setting. The largest share goes to connected users and
-    # priority zones, while area coverage, relay links and movement cost keep
-    # the solution from becoming too one-sided.
+    # Default priority-aware setting. The largest share goes to connected users
+    # and priority zones, while area coverage, relay links and movement cost
+    # keep the solution from becoming too one-sided.
     "connected_users": 0.40,
     "priority_coverage": 0.35,
     "area_coverage": 0.10,
@@ -130,7 +130,7 @@ class ParticleSwarmOptimizer:
         return particles
 
     def _objective(self, drones: np.ndarray) -> float:
-        """Score one candidate placement using the dissertation objective."""
+        """Score one candidate placement using the weighted placement objective."""
         config = self.simulation.config
         graph = self.simulation.build_network_graph(self.users, drones)
 

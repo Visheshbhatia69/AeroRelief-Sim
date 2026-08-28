@@ -22,7 +22,7 @@ class SimulationConfig:
     drone_range: float = 350.0
     random_seed: int = 42
     scenario_type: str = "Random users"
-    priority_source: str = "Synthetic demo zones"
+    priority_source: str = "Synthetic priority zones"
     obstacles_enabled: bool = False
 
 

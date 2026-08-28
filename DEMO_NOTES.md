@@ -1,4 +1,4 @@
-# Demo Notes: AeroRelief-Sim
+# Demonstration Notes: AeroRelief-Sim
 
 ## One-Sentence Explanation
 
@@ -69,7 +69,7 @@ Technical description:
 
 ## Current Technical Coverage
 
-The work now goes beyond a static 2D placement demo. It includes:
+The current version includes:
 
 - algorithm comparison: random/static, K-Means, and PSO;
 - normalized objective-function weights;

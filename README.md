@@ -29,7 +29,7 @@ The simulator includes fixed-altitude 3D communication, optional obstacle-aware 
 - Dynamic user-motion analysis over time.
 - Sensitivity analysis for UAV count, range, area size, PSO iterations, and scenarios.
 - Objective-weight sensitivity analysis for testing whether results depend on chosen formula weights.
-- Major-findings dashboard tab for dissertation-style interpretation.
+- Major-findings dashboard tab for result interpretation.
 - Before/after communication-demand heatmap showing how PSO reduces needy areas.
 - Dashboard visualizations and CSV export.
 
@@ -131,7 +131,7 @@ Total UAV repositioning distance from the initial random/static positions.
 
 ## Presentation Outputs
 
-The dashboard supports simulation, result inspection, and dissertation evidence generation. The main outputs are:
+The dashboard supports simulation, result inspection, and evaluation-output generation. The main outputs are:
 
 - deployment maps showing random/static, K-Means, and PSO UAV placement;
 - a slope chart showing how connected users and priority-zone coverage change across methods;

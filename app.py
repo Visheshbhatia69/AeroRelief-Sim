@@ -172,7 +172,7 @@ def sidebar_controls() -> tuple[SimulationConfig, int, int]:
     )
     priority_source = st.sidebar.selectbox(
         "Priority-zone data",
-        ["Synthetic demo zones", "Real OSM Stirling zones"],
+        ["Synthetic priority zones", "Real OSM Stirling zones"],
     )
 
     st.sidebar.header("Map and nodes")
@@ -1898,7 +1898,7 @@ def run_weight_sensitivity_analysis(
     """Run PSO with several objective-weight profiles on the same scenario."""
     rows = []
     # This checks whether the conclusion depends too heavily on one chosen
-    # formula, which was one of the supervisor's main concerns.
+    # objective-function weighting.
     sensitivity_swarm_size = min(swarm_size, 30)
     sensitivity_iterations = min(iterations, 70)
 

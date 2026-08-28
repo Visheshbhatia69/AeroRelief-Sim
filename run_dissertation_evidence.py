@@ -1,8 +1,8 @@
-"""Run the repeated experiments used as dissertation evidence.
+"""Run repeated experiments for evaluation evidence.
 
-The Streamlit dashboard is useful for inspection, but the report needs results
-that are averaged across multiple random seeds. This script keeps those runs in
-one place and writes the CSV/figure outputs used in the final analysis.
+The Streamlit dashboard is useful for inspection, but formal evaluation needs
+results averaged across multiple random seeds. This script keeps those runs in
+one place and writes the CSV/figure outputs used in analysis.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ from simulation import SimulationConfig
 from visualization import plot_comparison
 
 
-OUTPUT_DIR = Path("dissertation_evidence_revised")
+OUTPUT_DIR = Path("evaluation_outputs")
 
 METHOD_LABELS = {
     "baseline": "Random/static",

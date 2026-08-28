@@ -24,7 +24,7 @@ def main() -> None:
         drone_range=350.0,
         random_seed=42,
         scenario_type="Random users",
-        priority_source="Synthetic demo zones",
+        priority_source="Synthetic priority zones",
     )
 
     result = run_experiment(config)

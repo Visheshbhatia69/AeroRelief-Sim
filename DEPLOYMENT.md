@@ -55,7 +55,7 @@ run_dashboard.bat
 5. Deploy the application.
 6. Open the public URL and run a small test scenario.
 
-## Poster QR Code
+## Public Demo QR Code
 
 After deployment, the public Streamlit URL can be converted into a QR code.
 A short label such as the following works well:
